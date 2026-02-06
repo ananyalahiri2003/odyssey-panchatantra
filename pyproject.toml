@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "odyssey-panchatantra"
+version = "0.1.0"
+description = "Odyssey demo pipelines (story simulation + optional narration + muxing)."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Ananya Lahiri" }]
+dependencies = [
+  # Odyssey Python SDK from GitHub
+  "odyssey @ git+https://github.com/odysseyml/odyssey-python.git",
+
+  # Async HTTP downloads
+  "aiohttp>=3.9",
+
+  # OpenAI Python SDK (for TTS / narration)
+  "openai>=1.0.0",
+
+#  Python dotenv
+  "python-dotenv>=1.0.1",
+]
+
+[project.optional-dependencies]
+ffmpeg = [
+  "ffmpeg-python>=0.2.0",
+]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.6.0",
+  "black>=24.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.black]
+line-length = 100

@@ -1,0 +1,11 @@
+odyssey @ git+https://github.com/odysseyml/odyssey-python.git
+aiohttp>=3.9
+openai>=1.0.0
+
+[dev]
+pytest>=8.0
+ruff>=0.6.0
+black>=24.0
+
+[ffmpeg]
+ffmpeg-python>=0.2.0

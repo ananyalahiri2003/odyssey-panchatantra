@@ -1,0 +1,6 @@
+pyproject.toml
+src/odyssey_panchatantra.egg-info/PKG-INFO
+src/odyssey_panchatantra.egg-info/SOURCES.txt
+src/odyssey_panchatantra.egg-info/dependency_links.txt
+src/odyssey_panchatantra.egg-info/requires.txt
+src/odyssey_panchatantra.egg-info/top_level.txt
